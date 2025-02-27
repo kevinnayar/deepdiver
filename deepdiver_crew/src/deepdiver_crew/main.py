@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import sys
 import warnings
-from datetime import datetime
 from deepdiver_crew.crew import DeepdiverCrew
 
 # Suppress pysbd escape sequence warnings
@@ -12,7 +11,7 @@ def run():
     """
     Run the crew.
     """
-    inputs = {"topic": "React Use Hook", "current_year": str(datetime.now().year)}
+    inputs = {"topic": "JWT Authentication"}
 
     try:
         DeepdiverCrew().crew().kickoff(inputs=inputs)
