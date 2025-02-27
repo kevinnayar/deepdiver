@@ -1,0 +1,46 @@
+write_tldr_task:
+  description: >
+    Conduct a thorough research about the topic: "{topic}".
+    Based on the research, write a TL;DR section for the article.
+    This section will cover the high-level concepts regarding the topic: "{topic}".
+  expected_output: >
+    A TL;DR section for the article that summarizes the high-level concepts regarding the topic: "{topic}".
+    Formatted as markdown without '```'
+  agent: writer
+
+write_eli5_task:
+  description: >
+    Conduct a thorough research about the topic: "{topic}".
+    Based on the research, write a ELI5 section for the article.
+    This section will explain the topic: "{topic}" by using a simple metaphor.
+    The explanation should be written in a way that is engaging and interesting to read. 
+    Write it in a way that is easy to understand for a non-technical audience.
+  expected_output: >
+    A concise and engaging ELI5-style explanation of the topic: "{topic}".
+    Formatted as markdown without '```'
+  agent: writer
+
+write_technical_deepdive_task:
+  description: >
+    Conduct a thorough research about the topic: "{topic}".
+    Based on the research, write a technical deep dive section for the article.
+    This section will explain the topic: "{topic}" by using a real-world example.
+    The section should contain code examples.
+    Write it in a way that is meant for a technical audience.
+  expected_output: >
+    A technical deep dive section for the article that explains the topic: "{topic}" by using a real-world example.
+    Formatted as markdown without '```'
+  agent: writer
+
+edit_article_task:
+  description: >
+    Edit the article to ensure it is clear and concise.
+    Make sure the article is well written, well structured, and free of errors and typos.
+    Make sure it has 3 sections: TL;DR, ELI5, and Technical Deep Dive.
+  expected_output: >
+    Make sure the article is well written, well structured, and free of errors and typos.
+    Formatted as markdown without '```'
+  agent: editor
+  output_file: output/output.md
+  
+  
