@@ -9,7 +9,7 @@ scrape_website_tool = ScrapeWebsiteTool()
 
 @CrewBase
 class DeepdiverCrew:
-    """DeepdiverCrew crew"""
+    """DeepdiverCrew"""
 
     agents_config = "config/agents.yaml"
     tasks_config = "config/tasks.yaml"
@@ -65,7 +65,7 @@ class DeepdiverCrew:
 
     @crew
     def crew(self) -> Crew:
-        """Creates the DeepdiverCrew crew"""
+        """Creates the DeepdiverCrew"""
 
         return Crew(
             agents=self.agents,

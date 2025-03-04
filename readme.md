@@ -24,7 +24,13 @@ cd deepdiver_crew
 crewai install
 ```
 
-Update .env
+Copy the sample.env file to .env
+```bash
+cd deepdiver_crew
+cp sample.env .env
+```
+
+Update the .env file with your own OpenAI and Serper API keys
 ```bash
 MODEL=gpt-4o-mini
 OPENAI_API_KEY=<your-openai-api-key>
@@ -32,7 +38,6 @@ SERPER_API_KEY=<your-serper-api-key>
 ```
 
 Run the crew
-
 ```bash
 crewai run
 ```
